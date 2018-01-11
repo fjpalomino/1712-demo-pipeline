@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+  <div class="jumbotron">
+    <h1 id="employeeName"></h1>
+  </div> 
+
+<div id="respondRequest" class="container bg-white container-padding">
+
+	<div class="form-group row justify-content-md-center">
+    <label for="amount" class="col-sm-4 col-form-label">Amount</label>
+    <div class="col-sm-4">
+      <span id="amount"></span>
+    </div>
+  </div>
+  <div class="form-group row justify-content-md-center">
+    <label for="description" class="col-sm-4 col-form-label">Description</label>
+    <div class="col-sm-4">
+      <span id="description"></span>
+    </div>
+  </div>
+  <div class="form-group row justify-content-md-center">
+    <label for="blob" class="col-sm-4 col-form-label">Receipt</label>
+    <div class="col-sm-4">
+      <span>Receipt goes here</span>
+    </div>
+  </div>
+  <div class="form-group row justify-content-md-center">
+    <label class="col-sm-4 col-form-label">Submitted</label>
+    <div class="col-sm-4">
+      <span id="submitted"></span>
+    </div>
+  </div>
+  <div class="form-group row justify-content-md-center">
+    <label class="col-sm-4 col-form-label">Type of reimbursement</label>
+    <div class="col-sm-4">
+      <span id="type"></span>
+    </div>
+  </div>  
+  <div id="ERSTypes" class="form-group row justify-content-md-center">
+      <legend class="col-form-label col-sm-4 pt-0">Approve or Deny</legend>
+      <div class="col-sm-4">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="status" id="radio1" value="1">
+          <label class="form-check-label" for="gridRadios1">
+            Deny Reimbursement 
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="status" id="radio2" value="2">
+          <label class="form-check-label" for="gridRadios2">
+            Approve Reimbursement
+          </label>
+        </div>
+      </div>
+   </div>
+  
+  <div class="form-group row text-right justify-content-md-center">
+  	<div class="col-sm-4"><span id="updateMsg"><script id="script"></script></span></div>
+    <div class="col-sm-4">
+		<button type="button" class="btn btn-primary" id="cancelResponse">Cancel</button>
+      <button type="submit" class="btn btn-primary" id="submitResponse">Submit</button>
+    </div>
+  </div>
+
+</div>
